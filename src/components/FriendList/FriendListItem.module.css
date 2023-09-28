@@ -1,0 +1,39 @@
+.item {
+  margin-top: 15px;
+  width: 400px;
+  box-shadow: 5px 5px 15px grey;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.isOnline {
+  width: 30px;
+  height: 30px;
+  background-color: blanchedalmond;
+  border-radius: 30px;
+  margin-left: 15px;
+}
+.isOnline.green {
+  background-color: green;
+}
+
+.isOnline.red {
+  background-color: red;
+}
+.name {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  outline: 1px solid grey;
+}
