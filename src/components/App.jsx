@@ -1,16 +1,8 @@
+import { Profile } from "./Profile/Profile";
+import * as item from '../user.json'
+console.log(item)
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <div><Profile User={item}/> </div>
   );
 };
