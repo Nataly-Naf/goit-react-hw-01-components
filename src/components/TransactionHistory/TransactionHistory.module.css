@@ -1,0 +1,13 @@
+.transactionHistory {
+  width: 600px;
+}
+.headCell {
+  background-color: rgb(71, 231, 249);
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  color: white;
+}
+/* .tableBody:nth-child(even) {
+  background-color: aquamarine;
+} */

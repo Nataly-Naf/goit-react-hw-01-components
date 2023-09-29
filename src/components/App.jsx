@@ -4,13 +4,15 @@ import data from '../data.json'
 import { Statistics } from "./Statistics/Statistics";
 import { FriendList } from './FriendList/FriendList';
 import  friends  from '../friends.json'
-
+import items from '../transactions.json'
+import {TransactionHistory} from '..//components/TransactionHistory/TransactionHistory'
 export const App = () => {
   return (
     <>
       <div><Profile User={item} /> </div>
       <div><Statistics title="Upload stats" stats={data} /></div>
       <div><FriendList friends={friends} /></div>
+      <div><TransactionHistory items={items} /></div>
     </>
    
   );
