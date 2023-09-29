@@ -5,14 +5,18 @@ import { Statistics } from "./Statistics/Statistics";
 import { FriendList } from './FriendList/FriendList';
 import  * as friends from '../friends.json'
 import * as items from '../transactions.json'
-import {TransactionHistory} from '..//components/TransactionHistory/TransactionHistory'
+import { TransactionHistory } from '..//components/TransactionHistory/TransactionHistory'
+
+const dataArr = Array.from(data)
+const friendsArr = Array.from(friends)
+const itemsArr = Array.from(items)
 export const App = () => {
   return (
     <>
       <div><Profile User={item} /> </div>
-      <div><Statistics title="Upload stats" stats={data} /></div>
-      <div><FriendList friends={friends} /></div>
-      <div><TransactionHistory items={items} /></div>
+      <div><Statistics Title="Upload stats" Stats={dataArr} /></div>
+      <div><FriendList friends={friendsArr} /></div>
+      <div><TransactionHistory items={itemsArr} /></div>
     </>
    
   );
